@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../.idea/modules/gwepehpcalc.iml" filepath="$PROJECT_DIR$/../.idea/modules/gwepehpcalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/modules/gwepehpcalc-build.iml" filepath="$PROJECT_DIR$/../.idea/modules/gwepehpcalc-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/play-sbt-layout-seed.iml" filepath="$PROJECT_DIR$/.idea/modules/play-sbt-layout-seed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/play-sbt-layout-seed-build.iml" filepath="$PROJECT_DIR$/.idea/modules/play-sbt-layout-seed-build.iml" />
+    </modules>
+  </component>
+</project>
