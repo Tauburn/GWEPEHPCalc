@@ -1,4 +1,4 @@
-name := """play-sbt-layout-seed"""
+name := """calculator-fe"""
 
 version := "1.0-SNAPSHOT"
 
@@ -13,12 +13,17 @@ libraryDependencies ++= Seq(
   specs2 % Test
 )
 
+libraryDependencies += "org.scalaj" % "scalaj-http_2.11" % "2.3.0"
+
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
+
+
+scriptClasspath += "conf/*"
 
 // Play provides two styles of routers, one expects its actions to be injected, the
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 
-disablePlugins(PlayLayoutPlugin)
+//disablePlugins(PlayLayoutPlugin)
 
 fork in run := true

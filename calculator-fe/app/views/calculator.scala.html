@@ -1,0 +1,15 @@
+@import templates.calculator_template
+@import apihelpers.armour_stats
+@import connector.ApiConnector
+
+@con = @{ApiConnector}
+
+@content = {
+    <p> Here is a bit of content using a new template. </p>
+}
+
+@armourContent = {
+    <p> @con.getItem() </p>
+}
+
+@calculator_template(content = content, armour = armourContent)
