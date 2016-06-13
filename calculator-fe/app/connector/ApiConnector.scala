@@ -16,4 +16,9 @@ trait ApiConnector {
     print(response.body)
     response.body
   }
+
+  def getArmourStats(): String = {
+    val response: HttpResponse[String] = Http("https://api.guildwars2.com/v2/").asString
+    response.body
+  }
 }
