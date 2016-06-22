@@ -26,4 +26,4 @@ routesGenerator := InjectedRoutesGenerator
 
 //disablePlugins(PlayLayoutPlugin)
 
-fork in run := true
+//fork in run := true

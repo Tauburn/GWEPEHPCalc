@@ -11,8 +11,10 @@
         "heavy": {
           "armour_rating": "121"
         }
-      },
-      "ascended": {
+      }
+    },
+    "ascended": {
+      "class": {
         "light": {
           "armour_rating": "77"
         },

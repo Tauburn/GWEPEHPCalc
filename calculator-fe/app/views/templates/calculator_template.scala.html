@@ -1,16 +1,63 @@
-@(content: Html = HtmlFormat.empty, armour: Html = HtmlFormat.empty)
+@(content: Html = HtmlFormat.empty)
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Calculator</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="/assets/javascripts/dummyLoad.js"></script>
+    </head>
+    <body>
 
     <h1>Here are the first steps for the calculator</h1>
-    @content
-    @armour
-</head>
-<body>
 
-</body>
+    @content
+
+    <h2>Select a Class</h2>
+    <ul>
+        <li>Elementalist</li>
+        <li>Necromancer</li>
+        <li>Mesmer</li>
+        <li>Thief</li>
+        <li>Ranger</li>
+        <li>Engineer</li>
+        <li>Guardian</li>
+        <li>Warrior</li>
+        <li>Revenant</li>
+    </ul>
+
+    <form onsubmit="return false" oninput="EPoutput.value = ((power_input.value + precision_input.value) * 20);">
+        <h2>Enter your stats</h2>
+        <ul>
+            <li>Power <input type="number" id="power_input" name="power_input"/></li>
+            <li>Precision <input type="number" id="precision_input" name="precision_input"/></li>
+            <li>Toughness <input type="number" id="toughness_input" name="toughness_input"/></li>
+            <li>Vitality <input type="number" id="vitality_input" name="vitality_input"/></li>
+            <li>Healing Power <input type="number" id="healing_power_input" name="healing_power_input"/></li>
+            <li>Condition Damage <input type="number" id="condition_damage_input" name="condition_damage_input"/></li>
+            <li>Ferocity <input type="number" id="ferocity_input" name="ferocity_input"/></li>
+            <li>Expertise <input type="number" id="expertise_input" name="expertise_input"/></li>
+            <li>Concentration <input type="number" id="concentration_input" name="concentration_input"/></li>
+        </ul>
+
+        <h2>Calculate some EHP and EP here!</h2>
+        <ul>
+            <output name="EPoutput" id="EPoutput" for="power_input precision_input"></output>
+        </ul>
+    </form>
+    <h2>Select Weapons</h2>
+
+    <h2>Skill listing</h2>
+    <ul>
+        <li>Pick your set of healing and utility skills</li>
+    </ul>
+
+    <h2>Damage per skill and per tick here.</h2>
+
+    <div id="stats">Heyo</div>
+
+    <button id="stats_button">Update Heyo</button>
+
+    </body>
 </html>

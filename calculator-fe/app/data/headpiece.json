@@ -1,0 +1,468 @@
+[
+  {
+    "exotic": [
+      {
+        "berserker": {
+          "power": 60,
+          "precision": 43,
+          "ferocity": 43
+        }
+      },
+      {
+        "zealot": {
+          "power": 60,
+          "precision": 43,
+          "healing_power": 43
+        }
+      },
+      {
+        "soldier": {
+          "power": 60,
+          "toughness": 43,
+          "vitality": 43
+        }
+      },
+      {
+        "valkyrie": {
+          "power": 60,
+          "vitality": 43,
+          "ferocity": 43
+        }
+      },
+      {
+        "captain": {
+          "precision": 60,
+          "power": 43,
+          "toughness": 43
+        }
+      },
+      {
+        "rampager": {
+          "precision": 60,
+          "power": 43,
+          "condition_damage": 43
+        }
+      },
+      {
+        "assassin": {
+          "precision": 60,
+          "power": 43,
+          "ferocity": 43
+        }
+      },
+      {
+        "knight": {
+          "toughness": 60,
+          "precision": 43,
+          "power": 43
+        }
+      },
+      {
+        "cavalier": {
+          "toughness": 60,
+          "power": 43,
+          "ferocity": 43
+        }
+      },
+      {
+        "nomad": {
+          "toughness": 60,
+          "vitality": 43,
+          "healing_power": 43
+        }
+      },
+      {
+        "settler": {
+          "toughness": 60,
+          "condition_damage": 43,
+          "healing_power": 43
+        }
+      },
+      {
+        "giver": {
+          "toughness": 60,
+          "healing_power": 43,
+          "concentration": 43
+        }
+      },
+      {
+        "sentinel": {
+          "vitality": 60,
+          "power": 43,
+          "toughness": 43
+        }
+      },
+      {
+        "shaman": {
+          "vitality": 60,
+          "condition_damage": 43,
+          "healing_power": 43
+        }
+      },
+      {
+        "sinister": {
+          "condition_damage": 60,
+          "power": 43,
+          "precision": 43
+        }
+      },
+      {
+        "carrion": {
+          "condition_damage": 60,
+          "power": 43,
+          "vitality": 43
+        }
+      },
+      {
+        "rabid": {
+          "condition_damage": 60,
+          "power": 43,
+          "toughness": 43
+        }
+      },
+      {
+        "dire": {
+          "condition_damage": 60,
+          "toughness": 43,
+          "vitality": 43
+        }
+      },
+      {
+        "cleric": {
+          "healing_power": 60,
+          "power": 43,
+          "toughness": 43
+        }
+      },
+      {
+        "magi": {
+          "healing_power": 60,
+          "vitality": 43,
+          "precision": 43
+        }
+      },
+      {
+        "apothecary": {
+          "healing_power": 60,
+          "toughness": 43,
+          "condition_damage": 43
+        }
+      },
+      {
+        "magi": {
+          "healing_power": 60,
+          "vitality": 43,
+          "precision": 43
+        }
+      },
+      {
+        "commander": {
+          "power": 51,
+          "precision": 51,
+          "toughness": 28,
+          "concentration": 28
+        }
+      },
+      {
+        "marauder": {
+          "power": 51,
+          "precision": 51,
+          "vitality": 28,
+          "concentration": 28
+        }
+      },
+      {
+        "vigilant": {
+          "power": 51,
+          "toughness": 51,
+          "concentration": 28,
+          "expertise": 28
+        }
+      },
+      {
+        "crusader": {
+          "power": 51,
+          "toughness": 51,
+          "healing_power": 28,
+          "ferocity": 28
+        }
+      },
+      {
+        "wanderer": {
+          "power": 51,
+          "vitality": 51,
+          "toughness": 28,
+          "concentration": 28
+        }
+      },
+      {
+        "viper": {
+          "power": 51,
+          "condition_damage": 51,
+          "precision": 28,
+          "expertise": 28
+        }
+      },
+      {
+        "trailblazer": {
+          "toughness": 51,
+          "condition_damage": 51,
+          "vitality": 28,
+          "expertise": 28
+        }
+      },
+      {
+        "minstrel": {
+          "toughness": 51,
+          "healing_power": 51,
+          "vitality": 28,
+          "concentration": 28
+        }
+      },
+      {
+        "celestial": {
+          "power": 28,
+          "precision": 28,
+          "toughness": 28,
+          "vitality": 28,
+          "condition_damage": 28,
+          "healing_power": 28,
+          "ferocity": 28
+        }
+      }
+    ]
+  },
+  {
+    "ascended": [
+      {
+        "berserker": {
+          "power": 63,
+          "precision": 45,
+          "ferocity": 45
+        }
+      },
+      {
+        "zealot": {
+          "power": 63,
+          "precision": 45,
+          "healing_power": 45
+        }
+      },
+      {
+        "soldier": {
+          "power": 63,
+          "toughness": 45,
+          "vitality": 45
+        }
+      },
+      {
+        "valkyrie": {
+          "power": 63,
+          "vitality": 45,
+          "ferocity": 45
+        }
+      },
+      {
+        "captain": {
+          "precision": 63,
+          "power": 45,
+          "toughness": 45
+        }
+      },
+      {
+        "rampager": {
+          "precision": 63,
+          "power": 45,
+          "condition_damage": 45
+        }
+      },
+      {
+        "assassin": {
+          "precision": 63,
+          "power": 45,
+          "ferocity": 45
+        }
+      },
+      {
+        "knight": {
+          "toughness": 63,
+          "precision": 45,
+          "power": 45
+        }
+      },
+      {
+        "cavalier": {
+          "toughness": 63,
+          "power": 45,
+          "ferocity": 45
+        }
+      },
+      {
+        "nomad": {
+          "toughness": 63,
+          "vitality": 45,
+          "healing_power": 45
+        }
+      },
+      {
+        "settler": {
+          "toughness": 63,
+          "condition_damage": 45,
+          "healing_power": 45
+        }
+      },
+      {
+        "giver": {
+          "toughness": 63,
+          "healing_power": 45,
+          "concentration": 45
+        }
+      },
+      {
+        "sentinel": {
+          "vitality": 63,
+          "power": 45,
+          "toughness": 45
+        }
+      },
+      {
+        "shaman": {
+          "vitality": 63,
+          "condition_damage": 45,
+          "healing_power": 45
+        }
+      },
+      {
+        "sinister": {
+          "condition_damage": 63,
+          "power": 45,
+          "precision": 45
+        }
+      },
+      {
+        "carrion": {
+          "condition_damage": 63,
+          "power": 45,
+          "vitality": 45
+        }
+      },
+      {
+        "rabid": {
+          "condition_damage": 63,
+          "power": 45,
+          "toughness": 45
+        }
+      },
+      {
+        "dire": {
+          "condition_damage": 63,
+          "toughness": 45,
+          "vitality": 45
+        }
+      },
+      {
+        "cleric": {
+          "healing_power": 63,
+          "power": 45,
+          "toughness": 45
+        }
+      },
+      {
+        "magi": {
+          "healing_power": 63,
+          "vitality": 45,
+          "precision": 45
+        }
+      },
+      {
+        "apothecary": {
+          "healing_power": 63,
+          "toughness": 45,
+          "condition_damage": 45
+        }
+      },
+      {
+        "magi": {
+          "healing_power": 63,
+          "vitality": 45,
+          "precision": 45
+        }
+      },
+      {
+        "commander": {
+          "power": 54,
+          "precision": 54,
+          "toughness": 30,
+          "concentration": 30
+        }
+      },
+      {
+        "marauder": {
+          "power": 54,
+          "precision": 54,
+          "vitality": 30,
+          "concentration": 30
+        }
+      },
+      {
+        "vigilant": {
+          "power": 54,
+          "toughness": 54,
+          "concentration": 30,
+          "expertise": 30
+        }
+      },
+      {
+        "crusader": {
+          "power": 54,
+          "toughness": 54,
+          "healing_power": 30,
+          "ferocity": 30
+        }
+      },
+      {
+        "wanderer": {
+          "power": 54,
+          "vitality": 54,
+          "toughness": 30,
+          "concentration": 30
+        }
+      },
+      {
+        "viper": {
+          "power": 54,
+          "condition_damage": 54,
+          "precision": 30,
+          "expertise": 30
+        }
+      },
+      {
+        "trailblazer": {
+          "toughness": 54,
+          "condition_damage": 54,
+          "vitality": 30,
+          "expertise": 30
+        }
+      },
+      {
+        "minstrel": {
+          "toughness": 54,
+          "healing_power": 54,
+          "vitality": 30,
+          "concentration": 30
+        }
+      },
+      {
+        "celestial": {
+          "power": 30,
+          "precision": 30,
+          "toughness": 30,
+          "vitality": 30,
+          "condition_damage": 30,
+          "healing_power": 30,
+          "ferocity": 30
+        }
+      }
+    ]
+  }
+]
