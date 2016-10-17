@@ -7,6 +7,45 @@
         <title>Calculator</title>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="/assets/javascripts/dummyLoad.js"></script>
+
+        <script>
+            function ep(power) {
+                document.getElementById("EPoutput").innerHTML = power;
+            }
+        </script>
+        <script>
+            function epc(power, precision, ferocity) {
+
+                console.log("percentage crit is " + precision + " and percentage crit damage is " + ferocity)
+                var multiplier = (ccCalc(precision) * cdCalc(ferocity))/10000
+                var cof = power * multiplier
+                console.log(cof)
+                var ans = Number(power) + Number(cof)
+                console.log(ans)
+                document.getElementById("EPCoutput").innerHTML = ans;
+            }
+        </script>
+        <script>
+            function ccCalc(precision) {
+                return (((precision - 1000)/21) + 4)
+            }
+        </script>
+        <script>
+            function cdCalc(ferocity) {
+                return (150 + (ferocity/15))
+            }
+        </script>
+        <script>
+            function cc(precision) {
+                document.getElementById("critical_chance").innerHTML = ccCalc(precision);
+            }
+        </script>
+        <script>
+            function cd(ferocity) {
+                document.getElementById("critical_damage").innerHTML = cdCalc(ferocity);
+            }
+
+        </script>
     </head>
     <body>
 
@@ -27,28 +66,39 @@
         <li>Revenant</li>
     </ul>
 
-    <form onsubmit="return false" oninput="EPoutput.value = ((power_input.value + precision_input.value) * 20);">
-        <h2>Enter your stats</h2>
-        <ul>
-            <li>Power <input type="number" id="power_input" name="power_input"/></li>
-            <li>Precision <input type="number" id="precision_input" name="precision_input"/></li>
-            <li>Toughness <input type="number" id="toughness_input" name="toughness_input"/></li>
-            <li>Vitality <input type="number" id="vitality_input" name="vitality_input"/></li>
-            <li>Healing Power <input type="number" id="healing_power_input" name="healing_power_input"/></li>
-            <li>Condition Damage <input type="number" id="condition_damage_input" name="condition_damage_input"/></li>
-            <li>Ferocity <input type="number" id="ferocity_input" name="ferocity_input"/></li>
-            <li>Expertise <input type="number" id="expertise_input" name="expertise_input"/></li>
-            <li>Concentration <input type="number" id="concentration_input" name="concentration_input"/></li>
-        </ul>
+    <h2>Enter your stats</h2>
+    <ul>
+        <li>Power <input type="number" id="power_input" name="power_input" onchange="ep(power_input.value, precision_input.value); epc(power_input.value, precision_input.value, ferocity_input.value);"></li>
+        <li>Precision <input type="number" id="precision_input" name="precision_input" onchange="cc(precision_input.value); ep(power_input.value, precision_input.value); epc(power_input.value, precision_input.value, ferocity_input.value);"></li>
+        <li>Ferocity <input type="number" id="ferocity_input" name="ferocity_input" onchange="cd(ferocity_input.value); ep(power_input.value, precision_input.value); epc(power_input.value, precision_input.value, ferocity_input.value);"></li>
 
-        <h2>Calculate some EHP and EP here!</h2>
-        <ul>
-            <output name="EPoutput" id="EPoutput" for="power_input precision_input"></output>
-        </ul>
-    </form>
+
+        <li>Toughness <input type="number" id="toughness_input" name="toughness_input"></li>
+        <li>Vitality <input type="number" id="vitality_input" name="vitality_input"></li>
+        <li>Healing Power <input type="number" id="healing_power_input" name="healing_power_input"></li>
+
+        <li>Condition Damage <input type="number" id="condition_damage_input" name="condition_damage_input"></li>
+        <li>Expertise <input type="number" id="expertise_input" name="expertise_input"></li>
+        <li>Concentration <input type="number" id="concentration_input" name="concentration_input"></li>
+
+        <li>Health <h6 id="health"></h6></li>
+        <li>Armour <h6 id="armour"></h6></li>
+        <li>Critical Chance <h6 id="critical_chance"></h6></li>
+        <li>Critical Damage <h6 id="critical_damage"></h6></li>
+        <li>Boon Duration <h6 id="boon_duration"></h6></li>
+        <li>Condition Duration <h6 id="condition_duration"></h6></li>
+    </ul>
+
+    <h2>Calculate some EHP and EP here!</h2>
+    <ul>
+        <p id="EPoutput"></p>
+        <p id="EPCoutput"></p>
+    </ul>
+
     <h2>Select Weapons</h2>
 
     <h2>Skill listing</h2>
+
     <ul>
         <li>Pick your set of healing and utility skills</li>
     </ul>

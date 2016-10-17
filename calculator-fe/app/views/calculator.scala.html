@@ -1,10 +1,33 @@
-@import templates.calculator_template
-@import connector.ApiConnector
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script src="/assets/javascripts/dummyLoad.js"></script>-->
+    <script>
+    $(document).ready(function(){
+        $.getJSON({url: "https://api.guildwars2.com/v2/items/24547", success: function(result){
+            $.each(result, function(i, field){
+                var list = document.getElementById('ul1');
+                var entry = document.createElement('li');
+                entry.appendChild(document.createTextNode(i + ": " + field));
+                list.appendChild(entry)
+            });
+        }});
+    });
+    </script>
+</head>
+<body>
 
-@con = @{ApiConnector}
+<h1>Here are the first steps for the calculator</h1>
 
-@content = {
-    <p> Here is a bit of content using a new template. </p>
-}
+<h2>Select Armour</h2>
 
-@calculator_template(content = content)
+    <ul id="ul1"></ul>
+<ul>
+
+</ul>
+
+</body>
+</html>
